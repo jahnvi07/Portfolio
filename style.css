@@ -316,7 +316,7 @@ header .navbar ul li a:hover{
 }
 
 .internships .box-container .box i{
-    position: absolute;
+    position: relative;
     top: -1.5rem; left: -2.5rem;
     height: 5rem;
     width: 5rem;
