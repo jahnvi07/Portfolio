@@ -347,6 +347,7 @@ header .navbar ul li a:hover{
     padding-left: 4rem;
     border-left: .2rem solid #fff;
     position: relative;
+    height: 205px;
 }
 
 .projects .box-container .box span{
