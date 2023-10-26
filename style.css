@@ -281,7 +281,7 @@ header .navbar ul li a:hover{
 .internships .box-container{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: centre;
     flex-wrap: wrap;
     padding: 1rem 0;
     padding-left: 3rem;
