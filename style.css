@@ -280,6 +280,7 @@ header .navbar ul li a:hover{
 /* internships */
 .internships .box-container{
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
