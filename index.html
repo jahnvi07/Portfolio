@@ -306,7 +306,7 @@
                     <h3><i class="fas fa-map-marker-alt"></i> Ghaziabad, Uttar pradesh, india - 201002 </h3>
                 </div>
 
-                <form action="https://formspree.io/f/xanwgbob" method="POST">
+                <form id="contact-form" action="https://formspree.io/f/xanwgbob" method="POST">
                     <input type="text" name="name" placeholder="Your name" class="box">
                     <input type="email" name="email" placeholder="Your email" class="box">
                     <input type="text" name="context" placeholder="Share your reason for connecting (e.g., collaboration, networking, advice)" class="box">
@@ -314,6 +314,31 @@
                     <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i>
                     </button>
                 </form>
+                <div id="success-message" style="display:none;">Thank you for your message!</div>
+
+                <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Send the form data to Formspree
+            fetch(this.action, {
+                method: this.method,
+                body: new FormData(this),
+                headers: {
+                    Accept: 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    document.getElementById("contact-form").reset(); // Reset form fields
+                    document.getElementById("success-message").style.display = "block"; // Show success message
+                } else {
+                    alert("There was a problem with your submission. Please try again.");
+                }
+            }).catch(error => {
+                alert("There was a problem with your submission. Please try again.");
+            });
+        });
+    </script>
             </div>
         </div>
     </section>
