@@ -81,8 +81,8 @@ header{
     position: fixed;
     top: 0; left: 0;
     z-index: 1000;
-    height: 100%;
-    width: 30rem;
+    height: auto;
+    width: 35rem;
     background: #1a1a1a;
     display: flex;
     align-items: center;
