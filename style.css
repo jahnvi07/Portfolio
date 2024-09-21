@@ -81,7 +81,7 @@ header{
     position: fixed;
     top: 0; left: 0;
     z-index: 1000;
-    height: auto;
+    height: 100%;
     width: 35rem;
     background: #1a1a1a;
     display: flex;
@@ -135,8 +135,8 @@ header .navbar ul li a:hover {
 }  */
 
 header .user img{
-    height: 20rem;
-    width: 20rem;
+    height: 22rem;
+    width: 22rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
