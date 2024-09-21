@@ -326,31 +326,29 @@
 
 
     <script>
-    document.getElementById("contact-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the default form submission
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
 
-        // Send the form data to Formspree
-        fetch(this.action, {
-            method: this.method,
-            body: new FormData(this),
-            headers: {
-                Accept: 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                console.log("Thankyou for your message! Will try to connect with you soon"); // Debug log
-                document.getElementById("contact-form").reset(); // Reset form fields
-                document.getElementById("success-message").style.display = "block"; // Show success message
-            } else {
-                console.error("Submission failed:", response.status); // Debug log
-                alert("There was a problem with your submission. Please try again.");
-            }
-        }).catch(error => {
-            console.error("Error:", error); // Debug log
-            alert("There was a problem with your submission. Please try again.");
+            // Send the form data to Formspree
+            fetch(this.action, {
+                method: this.method,
+                body: new FormData(this),
+                headers: {
+                    Accept: 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert("Thank you for your message!"); // Show success alert
+                    document.getElementById("contact-form").reset(); // Reset form fields
+                } else {
+                    alert("There was a problem with your submission. Please try again."); // Show error alert
+                }
+            }).catch(error => {
+                alert("There was a problem with your submission. Please try again."); // Show error alert
+                console.error("Error:", error); // Log error to console
+            });
         });
-    });
-</script>
+    </script>
 
 
 
