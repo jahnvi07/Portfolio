@@ -77,7 +77,7 @@ section{
     color: var(--yellow);
 }
 
-header{
+/* header{
     position: fixed;
     top: 0; left: 0;
     z-index: 1000;
@@ -89,6 +89,49 @@ header{
     justify-content: center;
     flex-flow: column;
     text-align: center;
+} */
+header {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem; /* Keep your original width */
+    background: #1a1a1a;
+    display: flex;
+    align-items: flex-start; /* Align items at the start to avoid overflow */
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem; /* Add padding to ensure visibility */
+}
+
+header .user {
+    margin-bottom: 2rem; /* Add some spacing below the user info */
+}
+
+header .navbar {
+    width: 100%;
+}
+
+header .navbar ul {
+    list-style: none;
+    padding: 0; /* Reset padding */
+}
+
+header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+    transition: background 0.2s;
+}
+
+header .navbar ul li a:hover {
+    background: var(--yellow);
 }
 
 header .user img{
@@ -587,5 +630,27 @@ footer p{
 
     .contact .row form{
         margin: 3rem 0;
+    }
+}
+
+
+
+@media(max-width: 991px) {
+    header {
+        width: 100%; /* Make header full width on smaller screens */
+        padding-top: 1rem; /* Adjust padding */
+    }
+
+    header .user img {
+        height: 15rem; /* Smaller image for smaller screens */
+        width: 15rem; /* Adjust width */
+    }
+
+    header .user .name {
+        font-size: 2.5rem; /* Smaller name font */
+    }
+
+    header .user .post {
+        font-size: 1.5rem; /* Smaller post font */
     }
 }
