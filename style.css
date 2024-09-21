@@ -339,8 +339,8 @@ header .navbar ul li a:hover{
 .experience .box-container .box{
     flex: 1 1 30%;
 /*     width: 27rem; */
-/*     margin: 4rem 1rem; */
-    margin: 1rem;
+    margin: 4rem 1rem;
+/*     margin: 1rem; */
     padding-left: 4rem;
     border-left: .2rem solid #fff;
     position: relative;
