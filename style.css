@@ -507,7 +507,7 @@ footer p{
 .top{
     position: fixed;
     bottom: 4rem;
-    right: -40rem;
+    right: 2rem;
     z-index: 100;
     display: none;
 }
