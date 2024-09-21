@@ -332,12 +332,15 @@ header .navbar ul li a:hover{
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1rem 0;
+    width: 100%;
     padding-left: 3rem;
 }
 
 .experience .box-container .box{
-    width: 27rem;
-    margin: 4rem 1rem;
+    flex: 1 1 30%;
+/*     width: 27rem; */
+/*     margin: 4rem 1rem; */
+    margin: 1rem;
     padding-left: 4rem;
     border-left: .2rem solid #fff;
     position: relative;
