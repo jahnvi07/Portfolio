@@ -135,8 +135,8 @@ header .navbar ul li a:hover {
 }  */
 
 header .user img{
-    height: 25rem;
-    width: 25rem;
+    height: 22rem;
+    width: 22rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
