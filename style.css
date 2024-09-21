@@ -637,20 +637,20 @@ footer p{
 
 @media(max-width: 991px) {
     header {
-        width: 100%; /* Make header full width on smaller screens */
-        padding-top: 1rem; /* Adjust padding */
+        width: 100%;
+        padding-top: 1rem;
     }
 
     header .user img {
-        height: 15rem; /* Smaller image for smaller screens */
-        width: 15rem; /* Adjust width */
+        height: 15rem; 
+        width: 15rem;
     }
 
     header .user .name {
-        font-size: 2.5rem; /* Smaller name font */
+        font-size: 2.5rem; 
     }
 
     header .user .post {
-        font-size: 1.5rem; /* Smaller post font */
+        font-size: 1.5rem;
     }
 }
